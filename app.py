@@ -7,7 +7,7 @@ import os
 app = Flask(__name__)
 
 # Load the model from the models folder
-model_path = os.path.join('models', 'GaussianNB.pkl')
+model_path = os.path.join('models', 'ExtraTreesClassifier.pkl')
 with open(model_path, 'rb') as f:
     model = pickle.load(f)
 
